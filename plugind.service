@@ -1,0 +1,10 @@
+[Unit]
+Description=ObsidianOS Plugin Daemon
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/plugind
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
