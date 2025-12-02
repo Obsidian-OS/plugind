@@ -142,4 +142,5 @@ struct Plugin {
     run_as: String,
     restart_on: String,
     enabled: bool,
+    watch_path: Option<std::path::PathBuf>,
 }
